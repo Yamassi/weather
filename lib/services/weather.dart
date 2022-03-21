@@ -6,7 +6,8 @@ const openWeatherMap = 'https://api.openweathermap.org/data/2.5/weather';
 
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {
-    var url = '$openWeatherMap?q=$cityName&appid=$apiKey&units=metric&lang=ru';
+    var url =
+        '$openWeatherMap?q=$cityName&appid=$apiKey&units=metric&lang=ru'; // $apiKey change to your API
 
     NetworkHelper networkHelper = NetworkHelper(url);
 
